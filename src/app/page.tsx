@@ -664,7 +664,7 @@ export default function Home() {
             >
               <iframe
                 title="Sankalp Library Google Maps Location"
-                src="https://www.google.com/maps?q=Sankalp+Library+Chhindwara+Madhya+Pradesh&output=embed"
+                src="https://maps.google.com/maps?q=22.0540079,78.9338991&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -700,7 +700,7 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
-                href="https://www.google.com/maps?q=Sankalp+Library+Chhindwara+Madhya+Pradesh"
+                href="https://www.google.com/maps/place/22%C2%B003'14.4%22N+78%C2%B056'02.0%22E/@22.0540079,78.9313242,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.0540079!4d78.9338991?hl=en&entry=ttu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brand-primary text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:bg-brand-accent transition-colors flex items-center gap-2 shrink-0 self-start md:self-auto"
