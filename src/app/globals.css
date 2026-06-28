@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #FFFFFF;
+  --color-brand-surface: #F0F6FF;
+  --color-brand-primary: #1E6FBF;
+  --color-brand-accent: #3B9EF5;
+  --color-brand-light: #DBEAFE;
+  --color-brand-dark: #0F172A;
+  --color-brand-muted: #334155; /* Darker slate color for higher contrast and readability */
+  --color-brand-border: #E0EEFA;
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-playfair-display), serif;
+  --font-hindi: var(--font-noto-sans-devanagari), sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0F172A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-dark);
+  font-family: var(--font-sans);
+}
+
+/* Background Texture Patterns */
+.bg-dot-pattern {
+  background-image: radial-gradient(var(--color-brand-border) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 111, 191, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 111, 191, 0.04) 1px, transparent 1px);
+}
