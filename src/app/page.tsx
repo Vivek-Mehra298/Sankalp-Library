@@ -224,7 +224,17 @@ export default function Home() {
                   <a
                     key={link.name}
                     href={link.href}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsMenuOpen(false);
+                      const targetId = link.href.substring(1);
+                      setTimeout(() => {
+                        const targetEl = document.getElementById(targetId);
+                        if (targetEl) {
+                          targetEl.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 300);
+                    }}
                     className={`block px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
                       activeSection === link.id
                         ? "bg-brand-surface text-brand-primary"
@@ -237,7 +247,16 @@ export default function Home() {
                 <div className="pt-2">
                   <a
                     href="#contact"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsMenuOpen(false);
+                      setTimeout(() => {
+                        const targetEl = document.getElementById("contact");
+                        if (targetEl) {
+                          targetEl.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 300);
+                    }}
                     className="block text-center bg-brand-primary text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-brand-primary/20 hover:bg-brand-accent transition-colors"
                   >
                     Join Now — ₹450/month
